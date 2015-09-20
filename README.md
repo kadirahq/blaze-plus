@@ -1,4 +1,4 @@
-## Blaze Plus (Blaze+)
+## Blaze Plus (Blaze+) [![](https://api.travis-ci.org/kadirahq/blaze-plus.svg)](https://travis-ci.org/kadirahq/blaze-plus)
 
 Adding Props and State Management functionality to Meteor's Blaze templating engine. 
 
