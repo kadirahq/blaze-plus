@@ -1,0 +1,21 @@
+<body>
+  <div id="playground"></div>
+</body>
+
+<template name="App1">
+  {{>$ template="Welcome1" user=prop$getUser}}
+</template>
+
+<template name="Welcome1">
+  <span>Hello, </span> {{getName}}
+</template>
+
+<!-- ==================== -->
+
+<template name="App2">
+  {{>$ template="Welcome2" user=prop$getUser}}
+</template>
+
+<template name="Welcome2">
+  <span>Hello, </span> {{$name}} (previously: {{$oldName}})
+</template>

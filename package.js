@@ -12,6 +12,11 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   configure(api);
   api.use('tinytest');
+  api.use('jquery');
+
+  api.addFiles('test/helpers/templates.html', 'client');
+  api.addFiles('test/helpers/templates.js', 'client');
+  api.addFiles('test/blaze_plus.js', 'client');
 });
 
 function configure(api) {
