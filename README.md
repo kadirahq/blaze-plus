@@ -109,3 +109,9 @@ Template.Welcome.onCreated(function() {
 ~~~
 
 **It is not reactive.** That's something we did to prevent invalidating loops.
+
+## Known Issues
+
+* You can only pass helpers and data items as props. (You can't use `this`, `..` and etc).
+* If you are using an state in a template, you need to be define at the top of the autorun.
+* If you use any built-ins like `#if`, `#with`, `#each` there is possibility to have re-renders inside them.

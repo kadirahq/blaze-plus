@@ -28,3 +28,13 @@ Template.Welcome2.onCreated(function() {
     self.setState('name', name);
   });
 });
+
+
+// ========================
+
+Template.Welcome3.helpers({
+  getName: function() {
+    var name = Template.instance().props.user().name;
+    return name;
+  }
+});

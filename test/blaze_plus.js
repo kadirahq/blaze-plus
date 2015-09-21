@@ -1,9 +1,20 @@
-Tinytest.addAsync('Props - passing simple props', function(test, done) {
+Tinytest.addAsync('Props - passing a helper a prop', function(test, done) {
   clean();
   var name = Random.id();
   Session.set('name', name);
 
   Blaze.render(Template.App1, $('#playground').get(0));
+  var text = $('#playground').text();
+  test.isTrue(text.indexOf(name) >= 0);
+  done();
+});
+
+Tinytest.addAsync('Props - passing a data item as a prop', function(test, done) {
+  clean();
+  var name = Random.id();
+  var user = {name: name};
+
+  Blaze.renderWithData(Template.App3, {valueFromData: user}, $('#playground').get(0));
   var text = $('#playground').text();
   test.isTrue(text.indexOf(name) >= 0);
   done();

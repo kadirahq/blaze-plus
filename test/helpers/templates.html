@@ -19,3 +19,13 @@
 <template name="Welcome2">
   <span>Hello, </span> {{$name}} (previously: {{$oldName}})
 </template>
+
+<!-- ==================== -->
+
+<template name="App3">
+  {{>$ template="Welcome3" user=prop$valueFromData}}
+</template>
+
+<template name="Welcome3">
+  <span>Hello, </span> {{getName}})
+</template>
