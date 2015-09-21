@@ -1,7 +1,7 @@
 Package.describe({
   name: 'kadira:blaze-plus',
   summary: 'Adds Props and State Management Functionlity to Blaze',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/kadirahq/blaze-plus.git'
 });
 
