@@ -66,7 +66,7 @@ For an example, now you can change the name via: `Session.set('Your Name')` and 
 
 [Watch this video to see it yourself.](https://youtu.be/Gaz6S75Qo6c)
 
-## Using States to Simplyfy Things
+## Using States to Simplify Things
 
 In the above example, getting the name via props is kind a bit difficult and we need to write more code: That's where state's gonnna help us.
 
