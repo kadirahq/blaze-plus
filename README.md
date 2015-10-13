@@ -62,7 +62,7 @@ As you can see, Blaze Plus assign all the props you pass into the `props` proper
 
 By doing that, we can avoid templates re-renders.
 
-For an example, now you can change the name via: `Session.set('Your Name')` and it won't re-render the `Welcome` template. Just like that, you can pass data to any level you need.
+For an example, now you can change the name via: `Session.set('name', 'Your Name')` and it won't re-render the `Welcome` template. Just like that, you can pass data to any level you need.
 
 [Watch this video to see it yourself.](https://youtu.be/Gaz6S75Qo6c)
 
